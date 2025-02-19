@@ -1,0 +1,76 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+    overflow-y: auto; /* Allows vertical scrolling */
+}
+
+/* Main container */
+main {
+    max-width: 700px;
+    padding: 20px; /* Added padding */
+}
+
+/* Heading */
+h1 {
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Manuka', sans-serif;
+    padding: 20px; /* Added padding */
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding: 20px; /* Added padding */
+}
+
+.summarize-container {
+    position: absolute;
+    top: 200px; /* Shift the container 20px above the bottom of the viewport */
+    left: 20px; /* Align with the left padding */
+    transform: translateX(0); /* Remove centering */
+    overflow: hidden;
+    height: auto; /* Allow the height to adjust based on content */
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* The moving wrapper that holds the blocks of text */
+.summarize-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Align text to the left */
+    justify-content: flex-start;
+    gap: 20px;
+    animation: scrollUp 15s linear infinite; /* Keeps the text moving */
+}
+
+/* Each "Summarize Me" text */
+.summarize-text {
+    font-size: 70px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Keyframe for smooth upward scrolling */
+@keyframes scrollUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(-100%);
+    }
+}

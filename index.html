@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misinformation Tracking Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+</head>
+<body>
+    <main>
+        <h1>Misinformation Amplification Analysis and Tracking Dashboard</h1>
+        <h4>by Integrity Institute, 2021</h4>
+        <br>
+                <p>
+                    Tracking how social media platforms respond to misinformation is crucial to understanding the risks
+                    and dangers that platforms can pose to democratic elections.
+                </p>
+                <p>
+                    At the Integrity Institute, we are tracking how misinformation performs on platforms to measure
+                    the extent to which platforms are amplifying misinformation, and the extent to which they are
+                    creating an incentive structure that rewards lies and misinformation online.
+                </p>
+                <p>
+                    How platforms respond to misinformation can change. Amplification of misinformation can rise around critical events if misinformation narratives take hold. It can also fall, if platforms implement design changes around the event that reduce the spread of misinformation. We will be tracking how misinformation is amplified on the platforms, updated weekly, heading into and after the US midterm elections, to see if the large platforms are taking responsible actions in response to misinformation.
+                </p>
+
+                <p>
+
+                    This work is part of our Elections Integrity Program. You can learn more about that here. You can also view all the quantitative results of this work in our Misinformation Amplification Tracking Dashboard.
+                </p>
+
+                <p>
+                    Content that contains misinformation tends to get more engagement – meaning likes, views, comments, and shares – than factually accurate content. <br>
+
+
+                Mark Zuckerberg himself made this clear in his chart on the “Natural Engagement Pattern”. <br>
+
+                <a href="../Facebook/socials.html">
+                    <h2 class="summarize-me">SUMMARIZE ME</h2>
+                </a>
+
+
+                <br> This chart shows that as content gets closer and closer to becoming harmful, on average, it gets more engagement.  <br>
+
+                <br> Zuckerberg said that this pattern was true for a broad range of harms, which could include hate speech, self harm content, and also misinformation. According to Mark Zuckerberg, “no matter where we draw the lines for what is allowed, as a piece of content gets close to that line, people will engage with it more on average”. <br>
+
+            <br>  This has two implications for platform design and how we expect platforms to respond when users and organizations post misinformation on them.  <br>
+
+                <br> First, when platforms use machine learning models to predict user engagement on content, we should expect the predicted engagement to follow the actual engagement. When those predictions are used to rank and recommend content, specifically when a higher predicted engagement score means the content is more likely to be recommended or placed at the top of feeds, then we expect that misinformation will be preferentially distributed and amplified on the platform. <br> 
+
+                <a href="../Facebook/socials.html">
+                    <h2 class="summarize-me">SUMMARIZE ME</h2>
+                </a>
+                
+                <br> Second, when platforms give the ability to reshare content, we should expect the reshared content to contain a larger proportion of misinformation. <br>
+
+                <br> Platform mechanisms that make it easy and frictionless to reshare content will tend to give broader distribution to misinformation, for the same “Natural Engagement Pattern” reason. Misinformation is much more likely to be reshared than factual content, especially when the friction to resharing is low. <br>
+
+                <br> In this analysis, we measure the extent to which large platforms amplify misinformation, through either their algorithms or platform design. <br> 
+
+                <a href="../Facebook/socials.html">
+                    <h2 class="summarize-me">SUMMARIZE ME</h2>
+                </a>
+
+                <br> Methodology
+                Given that we expect misinformation to get more engagement, we can ask the question: how much additional distribution should we expect a well crafted lie to get on the platforms?<br> 
+                
+                
+                <br> To measure the extent to which platforms amplify misinformation, we are tracking the average Misinformation Amplification Factor (MAF) for large platforms. The MAF is the ratio between how much engagement a misinformation post gets and what engagement we would expect it to get based on the historical performance of content from the creator. The MAF for a specific piece of misinformation content is
+                MAF = Engagement on misinformation post / Average engagement on posts from creator prior to misinformation post<br>
+                
+                <a href="../Facebook/socials.html">
+                    <h2 class="summarize-me">SUMMARIZE ME</h2>
+                </a>
+
+                <br> We source misinformation content from fact checkers that are in the International Fact Checking Network. From the fact checks that they produce, we extract links to social media posts within them and label if the fact check found that they were misinformation or accurate. We pull in engagement data on the fact-checked posts, which, based on the platform, can include views, likes/faves/reactions, comments/replies, and shares/retweets. <br>
+                
+                
+                <br> To estimate the expected engagement for misinformation posts, we compute the average engagement on all content from the creator who uploaded the misinformation content for the two weeks prior to them posting misinformation, or the 15 posts they made prior to the misinformation post when there is limited content in the two week window (In the rare case we can’t get 15 pieces of content for the baseline, we filter the post out of our analysis). This may include misinformation posts, if the creator is a serial poster of misinformation, which is one bias that can cause us to underestimate the MAF. <br> 
+                
+                <a href="../Facebook/socials.html">
+                    <h2 class="summarize-me">SUMMARIZE ME</h2>
+                </a>
+                
+                <br> Examples of how this works can be seen in the charts below. Each of the charts is for a single post (on TikTok and Instagram). For each of these posts, the baseline for the source that posted the misinformation was about ten times lower than the engagement the misinformation post got, so the MAF for the posts was around 10. <br>
+                
+                
+                <br> This gives us a MAF for every misinformation post that fact checkers identify. To compute the MAF for each platform, we average the MAF for every post we collect on it. (Specifically, we average the logarithm of the MAF, since engagement on content generally follows a log-normal distribution). <br>
+                
+                <a href="../Facebook/socials.html">
+                    <h2 class="summarize-me">SUMMARIZE ME</h2>
+                </a>
+                
+                <br> We are doing this process on a daily basis. Every day, we collect social media posts from fact checks and pull in their engagement metrics and historical engagement on the creators. We get a new estimate of the Misinformation Amplification Factor for each platform. Most days there is not enough fact checked content to get a statistically meaningful measurement of the MAF, so a truly daily estimate is difficult. However, we can track a weekly estimate for most large platforms. We will be doing this process throughout the US midterm election to see if there are any dramatic swings in platform response to misinformation, and track the extent to which the platforms are amplifying misinformation during this critical period. By tracking the MAF, we will be able to tell if the online misinformation is trending in a negative direction with regards to the election, and if the platforms are taking responsible steps to curb its spread. <br>
+            
+                
+                <br>    
+                It should be noted that we are not able to get a comprehensive and unbiased list of all misinformation on platforms. We are limited to posts that fact checkers investigate, which is not an unbiased, random sample of misinformation. For a fact checker to investigate a piece of content, it must come to the fact checker's attention, which will be more likely if the content gets broader distribution. <br>
+
+                <br> This isn’t always the case, however, and there are plenty of examples of content with very low engagement numbers being fact checked. Fact checkers will sometimes search to find as many examples of a particular false claim as they can, and when they do find multiple instances of a particular misinformation claim, they will sometimes indicate which is the “primary” post which rose to their attention. We keep track when there is a “primary” post that fact checkers identify, and check to make sure our findings are consistent when limited to non-primary instances of misinformation. If we had access to internal data that platform employees have, it would be possible to create a much less biased data set to estimate the MAF. But we believe our data set is the best we can do from outside of the platforms and without any internal data. <br>
+                
+                
+                <br> Still, the MAF should not be interpreted as how much amplification a platform gives every single piece of misinformation, but rather how much additional distribution you can reasonably expect to get with a well crafted lie. And it highlights how all of the large platforms are currently creating a clear incentive structure to lie. <br>
+            
+                </p>
+
+        
+    
+    </main>
+</body>
+</html>

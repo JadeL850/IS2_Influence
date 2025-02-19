@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook's MAF</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <div class="summarize-me-1">SUMMARIZE ME</div>
+            <div class="summarize-me-2">SUMMARIZE ME</div>
+            <div class="summarize-me-3">SUMMARIZE ME</div>
+            <div class="summarize-me-4">SUMMARIZE ME</div>
+            <div class="summarize-me-5">SUMMARIZE ME</div>
+            <div class="summarize-me-6">SUMMARIZE ME</div>
+            <div class="summarize-me-7">SUMMARIZE ME</div>
+            <div class="summarize-me-8">SUMMARIZE ME</div>
+            <div class="summarize-me-9">SUMMARIZE ME</div>
+            <div class="summarize-me-10">SUMMARIZE ME</div>
+            <div class="summarize-me-11">SUMMARIZE ME</div>
+            <div class="summarize-me-12">SUMMARIZE ME</div>
+            <div class="summarize-me-13">SUMMARIZE ME</div>
+            <div class="summarize-me-14">SUMMARIZE ME</div>
+            <div class="summarize-me-15">SUMMARIZE ME</div>
+            <div class="summarize-me-16">SUMMARIZE ME</div>
+            <div class="summarize-me-17">SUMMARIZE ME</div>
+            <div class="summarize-me-18">SUMMARIZE ME</div>
+            <div class="summarize-me-19">SUMMARIZE ME</div>
+            <div class="summarize-me-20">SUMMARIZE ME</div>
+            <div class="summarize-me-21">SUMMARIZE ME</div>
+            <div class="summarize-me-22">SUMMARIZE ME</div>
+            <div class="summarize-me-23">SUMMARIZE ME</div>
+            <div class="summarize-me-24">SUMMARIZE ME</div>
+            <div class="summarize-me-25">SUMMARIZE ME</div>
+            <div class="summarize-me-26">SUMMARIZE ME</div>
+            <div class="summarize-me-27">SUMMARIZE ME</div>
+            <div class="summarize-me-28">SUMMARIZE ME</div>
+            <div class="summarize-me-29">SUMMARIZE ME</div>
+            <div class="summarize-me-30">SUMMARIZE ME</div>
+            <div class="summarize-me-31">SUMMARIZE ME</div>
+            <div class="summarize-me-32">SUMMARIZE ME</div>
+            <div class="summarize-me-33">SUMMARIZE ME</div>
+            <div class="summarize-me-34">SUMMARIZE ME</div>
+            <div class="summarize-me-35">SUMMARIZE ME</div>
+            <div class="summarize-me-36">SUMMARIZE ME</div>
+            <div class="summarize-me-37">SUMMARIZE ME</div>
+            <div class="summarize-me-38">SUMMARIZE ME</div>
+            
+                <h1>Testing Signals to Separate Misinfo from Accurate Information
+                </h1>
+                <h4>Twitter's MAF</h4>
+
+            <p class="body-text">
+
+                <br> In addition to labeling which posts are identified as misinformation by the fact checkers, we also label what sources the fact checkers turned to for accurate information. This means we have a structured data set tracking social media accounts that post misinformation and what online sources are posting accurate information. <br>
+
+                <br> We can use this to test various signals that can separate out sources of misinformation from sources of accurate information. An example signal that performs very well here is PageRank. We can use our social media aware PageRank data set, which computes PageRank scores for both social media accounts as well as domains in a unified calculation, as an example.
+
+                <br> Sources that post misinformation very rarely have a PageRank score above 1.25. However, sources of accurate information very regularly have scores above 1.5. One counter example of a high PageRank source that posted misinformation is the White House Twitter account, which a fact checker found posted incorrect information. PageRank isn’t a 100% perfect algorithm, and sources with extremely high PageRank can sometimes post misinformation, but it does highlight how a single, simple algorithm could dramatically reduce the extent to which platforms amplify misinformation.
+
+                <br> Google Search provides an example of how non-engagement centric platform design responds to misinformation, and how standard information retrieval signals like PageRank can help reduce the spread of misinformation. In a 2019 study from the Stanford Internet Observatory, they ran conspiracy and misinformation related queries on Google Search, and recorded where untrustworthy and misinformation sources ranked in the results. For the 13 conspiracy related queries they ran, only one of them resulted in untrustworthy sources appearing in the top 10 results. On Google Search, misinformation performs much worse than trustworthy content, providing a contrast to how content ranking and recommendation systems work on social media platforms. <br>
+
+                <h3>Data Set Availability</h3>
+
+                <br>If you would like access to our data set tracking all of this, please reach out to us. We are happy to share with research and civic organizations.
+                You can see our continually updating results on our Misinformation Amplification Factor Tracking Dashboard. <br>
+
+                <h3>Appendix: Does Facebook’s Fact Checking Program Change Their Platforms Results? </h3>
+                Facebook is the only platform with a significant program supporting fact checking partners, and there is significant overlap between the fact checkers we use in this analysis and the fact checking partners Facebook uses in their programs. So it is worth asking if Facebook’s fact checking program creates any bias in our results.
+                There are three ways in which Facebook’s program with fact checkers could influence our results:
+
+                <br>Facebook’s program directs fact checkers’ attention to systematically different claims than fact checkers investigate on other platforms
+                This could bias our MAF estimate in either direction
+                Facebook’s tools could allow fact checkers to be much more efficient and go beyond the most viral misinformation on the platform and uncover misinfo that does not go viral.<br>
+
+                <br> This would cause our MAF estimate for Facebook to be underestimated relative to other platforms. Facebook’s tools systematically hide the most viral content for misinfo claims and instead surface less viral posts for all claims. This would cause our MAF estimate for Facebook to be underestimated relative to other platforms. <br>
+
+                <br> The third potential bias above is not possible to investigate without internal Facebook data, but we can check the first two.<br> 
+
+                <h3>Does Facebook’s Program Direct Fact Checkers to Systematically Different Claims?</h3>
+                Facebook’s fact checking program does direct fact checkers to ignore some types of claims and investigate others. The fact checking policies instruct fact checkers to avoid evaluating celebrity gossip, sports, and opinion content, for example. <br>
+
+                <br> To see if the misinfo posts on Facebook are on different topics, we labeled the subject matter of all the fact checks in our data set. We can then compare the topic distributions of Facebook misinfo posts and Twitter misinfo posts, since both of them have sufficient statistics for the comparison to be meaningful. <br>
+
+                <br> The topic distributions for Facebook and Twitter misinfo content are almost identical. The fact checkers evaluate political content most frequently, followed by health, and science.<br>
+
+                <br> And in fact, we have enough misinformation claims on Facebook and Twitter to evaluate Facebook and Twitter strictly in situations where the fact checker identifies content across both platforms with the claim. So, we can restrict our estimation of the MAF for Facebook and Twitter to only use fact checks where both Facebook and Twitter posts containing the misinfo claim are provided by the fact checker. This means that the topic distribution is literally identical, and so any impact from Facebook’s tools guiding the fact checkers to specific claims, or only claims that went viral on one platform, are completely removed. <br>
+
+                <br> We find that limiting the data in this way does not have any significant impact on our results, and we see almost the exact same difference in the MAF for Facebook and Twitter. <br>
+
+                <br> We also see very clear separation in the distributions of MAF for Facebook and Twitter for this limited set of fact checks.
+                Does Facebook’s Tools Improve Fact Checkers Efficiency to Go Beyond the Most Viral Misinfo? <br>
+
+                <br> To investigate this, we can look at the variation in misinformation amplification factors (MAFs) by fact checkers. Each fact checking organization invests different levels of resources into Facebook’s program. Organizations that invest more will be more likely to go beyond the most viral misinfo and start finding misinfo that does not go viral, because they will get deeper into Facebook’s “queue”, where presumably content is not getting as much attention on the platform.
+                We have computed the MAF for each fact checker for Facebook, Instagram, and Twitter, to look for any dependency between the MAF and the number of Facebook posts the fact checkers assessed.<br>
+
+                <br> Overall, we do not see a strong relationship between the number of posts and the MAF for the platforms that would suggest this effect is significant. For Facebook specifically, we do see a slight dependence. Fact checkers that evaluate more posts do seem to have a slightly smaller MAF than those that evaluate very few posts. This effect is in the direction of Facebook’s tools helping fact checkers be more efficient.<br>
+
+                <br>However, the magnitude of the effect we see is small. The difference in MAF between the most productive fact checkers and the least is about 4, ranging from 2.3 to 6.3. This effect is therefore negligible when compared to the differences we see between platforms, and would not change our relative assessments of the platforms.<br>
+
+
+                <br><h3>Summary</h3>
+                <br>The only way in which Facebook’s fact checking program could be impacting our results in a significant way is if Facebook’s tools systematically hide the most viral misinformation posts from fact checkers, and if fact checkers heavily rely on those biased tools to surface Facebook content. This is unlikely to be the case, and so we conclude that the existence of the Facebook fact checking program does not have any significant impact on our results.
+        </p>
+    </div>
+            
+    </main>
+</body>

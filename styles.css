@@ -1,0 +1,67 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+    padding: 40px;
+}
+
+
+/* Main Content */
+main {
+    max-width: 700px;
+}
+
+h1 {
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: 'Manuka', sans-serif;
+}
+
+p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+@font-face {
+    font-family: 'Manuka'; 
+    src: url('fonts/Manuka') format('otf'),
+         url('fonts/Manuka') format('otf'); /* Provide multiple formats for compatibility */
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  /* 1. Take only font into main folder 2. Take index.html and anything else into subfolder*/ 
+
+/* Initially hide the elements */
+.summarize-me {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: none;
+    font-size: 80px;
+}
+
+.fade-in {
+    animation: fadeSlideIn 0.8s ease-in-out forwards;
+}
+
+@keyframes fadeSlideIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+

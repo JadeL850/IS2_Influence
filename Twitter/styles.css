@@ -1,0 +1,559 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    background-color: #000;
+    color: #fff;
+    font-family:  "Helvetica Neue", Helvetica, Arial, sans-serif;
+    overflow-y: auto; /* Allows vertical scrolling */
+}
+
+/* Main container */
+main {
+    max-width: 700px;
+    padding: 20px; /* Added padding */
+}
+
+/* Heading */
+h1 {
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    padding: 20px; /* Added padding */
+}
+
+h3{
+    padding: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+h4 {
+    padding: 20px; 
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Paragraph Styling */
+p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    padding: 20px; /* Added padding */
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.body-text{
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+}
+
+.container {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+    font-family: 'CustomFont', Manuka;
+}
+
+@font-face {
+    font-family: 'CustomFont';
+    src: url('../Fonts/Test\ Manuka\ Collection/') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Flickering "Summarize Me" */
+.summarize-me-1 {
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 900px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-2 {
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 1000px;
+    left: 20%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-3 {
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 1200px;
+    left: 40%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-4 {
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 1260px;
+    left: 30%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-5 {
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 1345px;
+    left: 60%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-6 {
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 1405px;
+    left: 40%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-7 {
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 1520px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-8 {
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 1570px;
+    left: 70%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-9 {
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 1570px;
+    left: 40%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-10{
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 1560px;
+    left: 20%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-11{
+    font-size: 40px;
+    font-weight: bold;
+    position: absolute;
+    top: 1660px;
+    left: 70%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-12{
+    font-size: 70px;
+    font-weight: bold;
+    position: absolute;
+    top: 1700px;
+    left: 70%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-12{
+    font-size: 70px;
+    font-weight: bold;
+    position: absolute;
+    top: 1700px;
+    left: 70%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-13{
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: 1760px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-14{
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    top: 1840px;
+    left: 80%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-15{
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: 1870px;
+    left: 30%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-16{
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute;
+    top: 1900px;
+    left: 30%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-17{
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute;
+    top: 1920px;
+    left: 60%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-18{
+    font-size: 70px;
+    font-weight: bold;
+    position: absolute;
+    top: 2000px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-19{
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute;
+    top: 2100px;
+    left: 70%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-20{
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute;
+    top: 2250px;
+    left: 40%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-21{
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute;
+    top: 2290px;
+    left: 70%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-22{
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute;
+    top: 2390px;
+    left: 40%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-23{
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute;
+    top: 2480px;
+    left: 60%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-24{
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    top: 2700px;
+    left: 30%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-25{
+    font-size: 70px;
+    font-weight: bold;
+    position: absolute;
+    top: 2760px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-26{
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute;
+    top: 2780px;
+    left: 40%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-27{
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute;
+    top: 2790px;
+    left: 70%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-28{
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute;
+    top: 2780px;
+    left: 40%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-29{
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute;
+    top: 2790px;
+    left: 40%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-30{
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute;
+    top: 2900px;
+    left: 40%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-31{
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute;
+    top: 2950px;
+    left: 60%;
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-32{
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute;
+    top: 2970px;
+    left: 50%; 
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-33{
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute;
+    top: 3000px;
+    left: 40%; 
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-34{
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute;
+    top: 3150px;
+    left: 40%; 
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-35{
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute;
+    top: 3170px;
+    left: 70%; 
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-36{
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute;
+    top: 3230px;
+    left: 60%; 
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-37{
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute;
+    top: 3340px;
+    left: 40%; 
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+.summarize-me-38{
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute;
+    top: 3370px;
+    left: 70%; 
+    transform: translateX(-50%);
+    color: white;
+    text-shadow: white;
+    animation: flicker 0.15s infinite alternate, moveText 3s infinite linear;
+}
+
+/* Main Body Text */
+.body-text {
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+/* Keyframes for Flickering Effect */
+@keyframes flicker {
+    0% { opacity: 0.2; text-shadow: white; }
+    25% { opacity: 0.6; text-shadow: white; }
+    50% { opacity: 0.1; text-shadow: white; }
+    75% { opacity: 0.8; text-shadow: white; }
+    100% { opacity: 0.4; text-shadow: white; }
+}
+
+/* Random Slight Movement */
+@keyframes moveText {
+    0% { transform: translateX(-50%) translateY(0); }
+    50% { transform: translateX(-48%) translateY(3px); }
+    100% { transform: translateX(-52%) translateY(-3px); }
+}
